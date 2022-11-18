@@ -15,6 +15,7 @@ namespace xadrez_console
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+             
         }
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)
         {
@@ -74,9 +75,10 @@ namespace xadrez_console
 
                 }
                 Console.WriteLine();
+                Console.BackgroundColor = fundoOriginal;
             }
             Console.WriteLine("  A B C D E F G H ");
-            Console.BackgroundColor = fundoOriginal;
+            
         }
 
         public static PosicaoXadrez lerPosicaoXadrez()
